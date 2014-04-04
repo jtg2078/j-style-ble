@@ -1,0 +1,13 @@
+Printing description of peripheral:
+<CBPeripheral: 0x1554af80 identifier = CB17F3B4-0991-8F7B-B340-F3339A57081A, Name = "(null)", state = disconnected>
+Printing description of advertisementData:
+{
+    kCBAdvDataChannel = 37;
+    kCBAdvDataIsConnectable = 1;
+    kCBAdvDataServiceUUIDs =     (
+        FFF0
+    );
+}
+Printing description of peripheral:
+<CBPeripheral: 0x1554af80 identifier = CB17F3B4-0991-8F7B-B340-F3339A57081A, Name = "(null)", state = disconnected>
+2014-04-04 16:34:08.471 bluetooth[8427:60b] didDiscoverPeripheral: (null)

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanViewController">
+            <connections>
+                <outlet property="deviceTableView" destination="mjL-1j-qe2" id="kiJ-NG-Cr8"/>
+                <outlet property="messageLabel" destination="bYn-je-ykE" id="Cnw-S6-8TT"/>
+                <outlet property="scanBtn" destination="y4y-nm-CFE" id="g3Y-QN-3z2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4y-nm-CFE">
+                    <rect key="frame" x="20" y="20" width="280" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="DxR-j4-mgv"/>
+                        <constraint firstAttribute="height" constant="50" id="dlx-N2-vOP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="Scan">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="scanBtnPressed:" destination="-1" eventType="touchUpInside" id="8sJ-jB-e9m"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Scan to start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYn-je-ykE">
+                    <rect key="frame" x="20" y="78" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="1nV-4b-4nh"/>
+                        <constraint firstAttribute="height" constant="21" id="lp2-tY-tkn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="mjL-1j-qe2">
+                    <rect key="frame" x="0.0" y="107" width="320" height="397"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="b0K-ig-lqz"/>
+                        <outlet property="delegate" destination="-1" id="QHH-xA-hck"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="y4y-nm-CFE" firstAttribute="leading" secondItem="bYn-je-ykE" secondAttribute="leading" id="6r6-ea-y4G"/>
+                <constraint firstItem="y4y-nm-CFE" firstAttribute="trailing" secondItem="bYn-je-ykE" secondAttribute="trailing" id="7r0-9h-oqB"/>
+                <constraint firstItem="mjL-1j-qe2" firstAttribute="top" secondItem="bYn-je-ykE" secondAttribute="bottom" constant="8" symbolic="YES" id="B2W-xK-Y0m"/>
+                <constraint firstAttribute="bottom" secondItem="mjL-1j-qe2" secondAttribute="bottom" id="FXJ-hn-I3a"/>
+                <constraint firstItem="y4y-nm-CFE" firstAttribute="centerX" secondItem="mjL-1j-qe2" secondAttribute="centerX" id="Fzi-pb-0Vj"/>
+                <constraint firstItem="y4y-nm-CFE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="azP-Up-fEl"/>
+                <constraint firstItem="y4y-nm-CFE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" symbolic="YES" id="juz-7U-i7a"/>
+                <constraint firstItem="mjL-1j-qe2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mV4-Pi-J9E"/>
+                <constraint firstItem="bYn-je-ykE" firstAttribute="top" secondItem="y4y-nm-CFE" secondAttribute="bottom" constant="8" symbolic="YES" id="sk9-ls-fA5"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
