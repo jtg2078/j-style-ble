@@ -10,6 +10,7 @@
 #import "BluetoothManager.h"
 #import "DeviceTableViewCell.h"
 #import "ConnectDeviceViewController.h"
+#import "JStyleViewController.h"
 
 @interface ScanViewController () <CBCentralManagerDelegate>
 @property (nonatomic, weak) BluetoothManager *manager;
@@ -138,8 +139,11 @@
 {
     [SVProgressHUD dismiss];
     
-    ConnectDeviceViewController *cdvc = [[ConnectDeviceViewController alloc] initWithDevice:peripheral];
-    [self.navigationController pushViewController:cdvc animated:YES];
+//    ConnectDeviceViewController *cdvc = [[ConnectDeviceViewController alloc] initWithDevice:peripheral];
+//    [self.navigationController pushViewController:cdvc animated:YES];
+    
+    JStyleViewController *jsvc = [[JStyleViewController alloc] initWithDevice:peripheral];
+    [self.navigationController pushViewController:jsvc animated:YES];
 
     NSLog(@"didConnectPeripheral");
 }

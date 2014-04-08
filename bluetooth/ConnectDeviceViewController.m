@@ -95,6 +95,7 @@
     CBService *service = self.services[indexPath.row];
     
     cell.textLabel.text = [service description];
+    cell.detailTextLabel.text = [service.UUID description];
     
     NSLog(@"%@", [service description]);
 }

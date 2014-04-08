@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96AF546218F458E0007B2EB2 /* JStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AF546018F458E0007B2EB2 /* JStyleViewController.m */; };
+		96AF546318F458E0007B2EB2 /* JStyleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96AF546118F458E0007B2EB2 /* JStyleViewController.xib */; };
+		96AF546B18F47721007B2EB2 /* NSData+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AF546A18F47721007B2EB2 /* NSData+Hex.m */; };
+		96AF546E18F481C0007B2EB2 /* NSString+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AF546D18F481C0007B2EB2 /* NSString+Hex.m */; };
 		96C1320718EE6E5800357E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C1320618EE6E5800357E22 /* Foundation.framework */; };
 		96C1320918EE6E5800357E22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C1320818EE6E5800357E22 /* CoreGraphics.framework */; };
 		96C1320B18EE6E5800357E22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C1320A18EE6E5800357E22 /* UIKit.framework */; };
@@ -52,6 +56,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96AF545F18F458E0007B2EB2 /* JStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JStyleViewController.h; sourceTree = "<group>"; };
+		96AF546018F458E0007B2EB2 /* JStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JStyleViewController.m; sourceTree = "<group>"; };
+		96AF546118F458E0007B2EB2 /* JStyleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JStyleViewController.xib; sourceTree = "<group>"; };
+		96AF546918F47721007B2EB2 /* NSData+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Hex.h"; sourceTree = "<group>"; };
+		96AF546A18F47721007B2EB2 /* NSData+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hex.m"; sourceTree = "<group>"; };
+		96AF546C18F481C0007B2EB2 /* NSString+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hex.h"; sourceTree = "<group>"; };
+		96AF546D18F481C0007B2EB2 /* NSString+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hex.m"; sourceTree = "<group>"; };
 		96C1320318EE6E5800357E22 /* bluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C1320618EE6E5800357E22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96C1320818EE6E5800357E22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +137,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96AF545E18F458BC007B2EB2 /* j-style */ = {
+			isa = PBXGroup;
+			children = (
+				96AF545F18F458E0007B2EB2 /* JStyleViewController.h */,
+				96AF546018F458E0007B2EB2 /* JStyleViewController.m */,
+				96AF546118F458E0007B2EB2 /* JStyleViewController.xib */,
+			);
+			name = "j-style";
+			sourceTree = "<group>";
+		};
+		96AF546818F47721007B2EB2 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				96AF546918F47721007B2EB2 /* NSData+Hex.h */,
+				96AF546A18F47721007B2EB2 /* NSData+Hex.m */,
+				96AF546C18F481C0007B2EB2 /* NSString+Hex.h */,
+				96AF546D18F481C0007B2EB2 /* NSString+Hex.m */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		96C131FA18EE6E5800357E22 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +197,7 @@
 		96C1320E18EE6E5800357E22 /* bluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				96AF545E18F458BC007B2EB2 /* j-style */,
 				96C1325C18EEE8F300357E22 /* BaseViewController.h */,
 				96C1325D18EEE8F300357E22 /* BaseViewController.m */,
 				96C1325018EEAA0A00357E22 /* scan for devices */,
@@ -254,6 +287,7 @@
 		96C1325F18EEEAC600357E22 /* library */ = {
 			isa = PBXGroup;
 			children = (
+				96AF546818F47721007B2EB2 /* extension */,
 				96C1326018EEEAC600357E22 /* SVProgressHUD */,
 			);
 			path = library;
@@ -360,6 +394,7 @@
 				96C1326E18EEF36600357E22 /* ServiceViewController.xib in Resources */,
 				96C1321E18EE6E5800357E22 /* Images.xcassets in Resources */,
 				96C1326518EEEAC600357E22 /* SVProgressHUD.bundle in Resources */,
+				96AF546318F458E0007B2EB2 /* JStyleViewController.xib in Resources */,
 				96C1325B18EEE71700357E22 /* ConnectDeviceViewController.xib in Resources */,
 				96C1323F18EE6F9600357E22 /* RootViewController.xib in Resources */,
 				96C1324418EE701600357E22 /* ScanViewController.xib in Resources */,
@@ -389,8 +424,11 @@
 				96C1324318EE701600357E22 /* ScanViewController.m in Sources */,
 				96C1325418EEAA4D00357E22 /* DeviceTableViewCell.m in Sources */,
 				96C1321C18EE6E5800357E22 /* bluetooth.xcdatamodeld in Sources */,
+				96AF546218F458E0007B2EB2 /* JStyleViewController.m in Sources */,
 				96C1323E18EE6F9600357E22 /* RootViewController.m in Sources */,
+				96AF546B18F47721007B2EB2 /* NSData+Hex.m in Sources */,
 				96C1326618EEEAC600357E22 /* SVProgressHUD.m in Sources */,
+				96AF546E18F481C0007B2EB2 /* NSString+Hex.m in Sources */,
 				96C1324818EE9ACF00357E22 /* BluetoothManager.m in Sources */,
 				96C1321518EE6E5800357E22 /* main.m in Sources */,
 			);
