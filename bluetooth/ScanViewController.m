@@ -144,6 +144,8 @@
     
     JStyleViewController *jsvc = [[JStyleViewController alloc] initWithDevice:peripheral];
     [self.navigationController pushViewController:jsvc animated:YES];
+    
+    [self scanBtnPressed:nil];
 
     NSLog(@"didConnectPeripheral");
 }

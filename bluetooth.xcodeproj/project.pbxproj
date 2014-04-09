@@ -201,8 +201,7 @@
 				96C1325C18EEE8F300357E22 /* BaseViewController.h */,
 				96C1325D18EEE8F300357E22 /* BaseViewController.m */,
 				96C1325018EEAA0A00357E22 /* scan for devices */,
-				96C1325618EEE6E600357E22 /* connect to device */,
-				96C1326918EEF31F00357E22 /* explore services */,
+				96E2B8ED18F5062400F62A8A /* 目前沒有用到 */,
 				96C1321718EE6E5800357E22 /* AppDelegate.h */,
 				96C1321818EE6E5800357E22 /* AppDelegate.m */,
 				96C1321D18EE6E5800357E22 /* Images.xcassets */,
@@ -312,6 +311,15 @@
 				96C1326C18EEF36600357E22 /* ServiceViewController.xib */,
 			);
 			name = "explore services";
+			sourceTree = "<group>";
+		};
+		96E2B8ED18F5062400F62A8A /* 目前沒有用到 */ = {
+			isa = PBXGroup;
+			children = (
+				96C1325618EEE6E600357E22 /* connect to device */,
+				96C1326918EEF31F00357E22 /* explore services */,
+			);
+			name = "目前沒有用到";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
